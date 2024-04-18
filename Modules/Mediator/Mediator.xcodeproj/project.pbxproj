@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24C4F92896C2081C4985F454 /* libPods-MainApp-Mediator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5969B800126BDE7D450F17 /* libPods-MainApp-Mediator.a */; };
 		AFE650412BD10AFF008A5DC4 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE650402BD10AFF008A5DC4 /* Mediator.m */; };
 		AFE650422BD10AFF008A5DC4 /* Mediator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFE6503F2BD10AFF008A5DC4 /* Mediator.h */; };
 /* End PBXBuildFile section */
@@ -25,9 +26,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A5969B800126BDE7D450F17 /* libPods-MainApp-Mediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainApp-Mediator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE6503C2BD10AFF008A5DC4 /* libMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMediator.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE6503F2BD10AFF008A5DC4 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
 		AFE650402BD10AFF008A5DC4 /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		B5949ACEDC51C577F3BED0CC /* Pods-MainApp-Mediator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainApp-Mediator.release.xcconfig"; path = "Target Support Files/Pods-MainApp-Mediator/Pods-MainApp-Mediator.release.xcconfig"; sourceTree = "<group>"; };
+		E3C7F2A261742EA0D6F99538 /* Pods-MainApp-Mediator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainApp-Mediator.debug.xcconfig"; path = "Target Support Files/Pods-MainApp-Mediator/Pods-MainApp-Mediator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C4F92896C2081C4985F454 /* libPods-MainApp-Mediator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		804296382DE811A7D41D4ED0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A5969B800126BDE7D450F17 /* libPods-MainApp-Mediator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD6795F8AE72FA037A10697F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3C7F2A261742EA0D6F99538 /* Pods-MainApp-Mediator.debug.xcconfig */,
+				B5949ACEDC51C577F3BED0CC /* Pods-MainApp-Mediator.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
 		AFE650332BD10AFF008A5DC4 = {
 			isa = PBXGroup;
 			children = (
 				AFE6503E2BD10AFF008A5DC4 /* Mediator */,
 				AFE6503D2BD10AFF008A5DC4 /* Products */,
+				AD6795F8AE72FA037A10697F /* Pods */,
+				804296382DE811A7D41D4ED0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFE650452BD10AFF008A5DC4 /* Build configuration list for PBXNativeTarget "Mediator" */;
 			buildPhases = (
+				46DAD94A5EBC4CC35B5F8173 /* [CP] Check Pods Manifest.lock */,
 				AFE650382BD10AFF008A5DC4 /* Sources */,
 				AFE650392BD10AFF008A5DC4 /* Frameworks */,
 				AFE6503A2BD10AFF008A5DC4 /* CopyFiles */,
@@ -117,6 +143,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46DAD94A5EBC4CC35B5F8173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MainApp-Mediator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFE650382BD10AFF008A5DC4 /* Sources */ = {
@@ -248,6 +299,7 @@
 		};
 		AFE650462BD10AFF008A5DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C7F2A261742EA0D6F99538 /* Pods-MainApp-Mediator.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
@@ -260,6 +312,7 @@
 		};
 		AFE650472BD10AFF008A5DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5949ACEDC51C577F3BED0CC /* Pods-MainApp-Mediator.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;

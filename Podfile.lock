@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Bifrost (1.0.0)
+  - SigmaTableViewModel (1.0.0)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Bifrost
+  - SigmaTableViewModel
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Bifrost
+    - SigmaTableViewModel
+    - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
+  Bifrost: 2eb95b8054a8fe34845dd6cdd9b4af492f58f203
+  SigmaTableViewModel: 1c7811730fbfb776d2c25457f4c18cec63bbc240
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 869ee52339c4b597b0a9ae09a48d7ba9c0dad317
+
+COCOAPODS: 1.12.0
