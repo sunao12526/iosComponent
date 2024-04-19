@@ -6,7 +6,9 @@
 //
 
 #import "TestModuleA.h"
-
+#import "Mediator/Mediator.h"
 @implementation TestModuleA
-
++ (void)load {
+    [Mediator alloc];
+}
 @end

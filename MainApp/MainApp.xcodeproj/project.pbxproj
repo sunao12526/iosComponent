@@ -17,7 +17,18 @@
 		AFE64FD82BD0FE2E008A5DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE64FD72BD0FE2E008A5DC4 /* main.m */; };
 		AFE650602BD269D7008A5DC4 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE650482BD26320008A5DC4 /* libCommon.a */; };
 		AFE650622BD26A8A008A5DC4 /* libMediator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE650612BD26A8A008A5DC4 /* libMediator.a */; };
+		AFE6507E2BD26C78008A5DC4 /* libTestModuleA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6507D2BD26BA1008A5DC4 /* libTestModuleA.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFE6507C2BD26BA1008A5DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE650782BD26BA1008A5DC4 /* TestModuleA.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AFE6506C2BD26B58008A5DC4;
+			remoteInfo = TestModuleA;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3F6AC9DEB34683A5FF757075 /* Pods-MainApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainApp.debug.xcconfig"; path = "Target Support Files/Pods-MainApp/Pods-MainApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +47,7 @@
 		AFE64FD72BD0FE2E008A5DC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFE650482BD26320008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE650612BD26A8A008A5DC4 /* libMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMediator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE650782BD26BA1008A5DC4 /* TestModuleA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestModuleA.xcodeproj; path = ../Modules/TestModuleA/TestModuleA.xcodeproj; sourceTree = "<group>"; };
 		EF401BCB66159505E22006F9 /* libPods-MainApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -44,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE6507E2BD26C78008A5DC4 /* libTestModuleA.a in Frameworks */,
 				AFE650622BD26A8A008A5DC4 /* libMediator.a in Frameworks */,
 				AFE650602BD269D7008A5DC4 /* libCommon.a in Frameworks */,
 				9B577254680E1BC1C26F39B3 /* libPods-MainApp.a in Frameworks */,
@@ -56,6 +69,7 @@
 		AFE64FB92BD0FE2A008A5DC4 = {
 			isa = PBXGroup;
 			children = (
+				AFE650782BD26BA1008A5DC4 /* TestModuleA.xcodeproj */,
 				AFE64FC42BD0FE2A008A5DC4 /* MainApp */,
 				AFE64FC32BD0FE2A008A5DC4 /* Products */,
 				C4B3F201EE3FF2D79F23C6C8 /* Pods */,
@@ -87,6 +101,14 @@
 				AFE64FD72BD0FE2E008A5DC4 /* main.m */,
 			);
 			path = MainApp;
+			sourceTree = "<group>";
+		};
+		AFE650792BD26BA1008A5DC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFE6507D2BD26BA1008A5DC4 /* libTestModuleA.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C4B3F201EE3FF2D79F23C6C8 /* Pods */ = {
@@ -155,12 +177,28 @@
 			mainGroup = AFE64FB92BD0FE2A008A5DC4;
 			productRefGroup = AFE64FC32BD0FE2A008A5DC4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AFE650792BD26BA1008A5DC4 /* Products */;
+					ProjectRef = AFE650782BD26BA1008A5DC4 /* TestModuleA.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AFE64FC12BD0FE2A008A5DC4 /* MainApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AFE6507D2BD26BA1008A5DC4 /* libTestModuleA.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTestModuleA.a;
+			remoteRef = AFE6507C2BD26BA1008A5DC4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AFE64FC02BD0FE2A008A5DC4 /* Resources */ = {
