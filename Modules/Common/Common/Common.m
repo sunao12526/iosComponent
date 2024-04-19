@@ -6,7 +6,13 @@
 //
 
 #import "Common.h"
-
+#import "AFNetworking.h"
 @implementation Common
-
++ (void)load {
+//    [AFHTTPSessionManager alloc];
+}
++ (void)initialize {
+  [super initialize];
+//  [AFHTTPSessionManager alloc];
+}
 @end

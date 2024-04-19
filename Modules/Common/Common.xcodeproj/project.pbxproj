@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		625E60BD1EADC5DF77D8648B /* libPods-MainApp-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CFC18474511ACE4DAE505B /* libPods-MainApp-Common.a */; };
 		AFE6502C2BD10A97008A5DC4 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE6502B2BD10A97008A5DC4 /* Common.m */; };
 		AFE6502D2BD10A97008A5DC4 /* Common.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFE6502A2BD10A97008A5DC4 /* Common.h */; };
+		C173C6068ABB08ECC0A41DCF /* libPods-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 727FC8F2CECC8B7922CC5370 /* libPods-Common.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		66CFC18474511ACE4DAE505B /* libPods-MainApp-Common.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainApp-Common.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42E02D50AA6F3B98D6CC13FC /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
+		727FC8F2CECC8B7922CC5370 /* libPods-Common.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Common.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7D5AD31E1D6D2CCA021A48 /* Pods-MainApp-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainApp-Common.debug.xcconfig"; path = "Target Support Files/Pods-MainApp-Common/Pods-MainApp-Common.debug.xcconfig"; sourceTree = "<group>"; };
+		A562071EDE775449B70D2C35 /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE650272BD10A97008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE6502A2BD10A97008A5DC4 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		AFE6502B2BD10A97008A5DC4 /* Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
@@ -39,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				625E60BD1EADC5DF77D8648B /* libPods-MainApp-Common.a in Frameworks */,
+				C173C6068ABB08ECC0A41DCF /* libPods-Common.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +51,7 @@
 		2663E7770C20D909D717E1F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				66CFC18474511ACE4DAE505B /* libPods-MainApp-Common.a */,
+				727FC8F2CECC8B7922CC5370 /* libPods-Common.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,6 +88,8 @@
 			children = (
 				9B7D5AD31E1D6D2CCA021A48 /* Pods-MainApp-Common.debug.xcconfig */,
 				D090EA0B55B9F3F632C75113 /* Pods-MainApp-Common.release.xcconfig */,
+				A562071EDE775449B70D2C35 /* Pods-Common.debug.xcconfig */,
+				42E02D50AA6F3B98D6CC13FC /* Pods-Common.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -160,7 +164,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MainApp-Common-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Common-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -299,11 +303,11 @@
 		};
 		AFE650312BD10A97008A5DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B7D5AD31E1D6D2CCA021A48 /* Pods-MainApp-Common.debug.xcconfig */;
+			baseConfigurationReference = A562071EDE775449B70D2C35 /* Pods-Common.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,11 +316,11 @@
 		};
 		AFE650322BD10A97008A5DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D090EA0B55B9F3F632C75113 /* Pods-MainApp-Common.release.xcconfig */;
+			baseConfigurationReference = 42E02D50AA6F3B98D6CC13FC /* Pods-Common.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

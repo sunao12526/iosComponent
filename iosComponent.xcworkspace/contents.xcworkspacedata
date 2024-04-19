@@ -2,15 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Modules/Mediator/Mediator.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Modules/Common/Common.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:MainApp/MainApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Mediator/Mediator.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Common/Common.xcodeproj">
    </FileRef>
 </Workspace>

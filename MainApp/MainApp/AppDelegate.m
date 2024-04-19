@@ -7,6 +7,9 @@
 
 #import "AppDelegate.h"
 #import "AFNetworking.h"
+#import "BifrostHeader.h"
+#import "Common/Common.h"
+#import "Mediator/Mediator.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    [[AFHTTPSessionManager alloc]init];
+    Common *ddd = [Common new];
+    Mediator *mmm = [Mediator new];
     return YES;
 }
 

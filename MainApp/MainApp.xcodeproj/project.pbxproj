@@ -15,6 +15,8 @@
 		AFE64FD22BD0FE2E008A5DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD12BD0FE2E008A5DC4 /* Assets.xcassets */; };
 		AFE64FD52BD0FE2E008A5DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD32BD0FE2E008A5DC4 /* LaunchScreen.storyboard */; };
 		AFE64FD82BD0FE2E008A5DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE64FD72BD0FE2E008A5DC4 /* main.m */; };
+		AFE650602BD269D7008A5DC4 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE650482BD26320008A5DC4 /* libCommon.a */; };
+		AFE650622BD26A8A008A5DC4 /* libMediator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE650612BD26A8A008A5DC4 /* libMediator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		AFE64FD42BD0FE2E008A5DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFE64FD62BD0FE2E008A5DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE64FD72BD0FE2E008A5DC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFE650482BD26320008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE650612BD26A8A008A5DC4 /* libMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMediator.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF401BCB66159505E22006F9 /* libPods-MainApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -40,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE650622BD26A8A008A5DC4 /* libMediator.a in Frameworks */,
+				AFE650602BD269D7008A5DC4 /* libCommon.a in Frameworks */,
 				9B577254680E1BC1C26F39B3 /* libPods-MainApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +102,8 @@
 		E6DAD1FA8466610323D4DCA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFE650612BD26A8A008A5DC4 /* libMediator.a */,
+				AFE650482BD26320008A5DC4 /* libCommon.a */,
 				EF401BCB66159505E22006F9 /* libPods-MainApp.a */,
 			);
 			name = Frameworks;
@@ -363,6 +371,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sunao.MainApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,6 +405,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sunao.MainApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
