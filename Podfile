@@ -50,6 +50,12 @@ target "MainApp" do
     project 'MainApp/MainApp.xcodeproj'
     mediatorPods
 end
+
+#target "TestModuleA" do
+#    project 'Modules/TestModuleA/TestModuleA.xcodeproj'
+#    pod 'YYModel'
+#end
+
 target "Common" do
     project 'Modules/Common/Common.xcodeproj'
     commonPods
