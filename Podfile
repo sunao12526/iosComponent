@@ -5,8 +5,6 @@ platform :ios, '12.0'
 #disable some warnings
 post_install do |installer|
 
-    
-
     installer.pods_project.build_configurations.each do |config|
         # # warning 切 error 的开关
         config.build_settings['GCC_TREAT_WARNINGS_AS_ERRORS'] = 'YES'
@@ -27,6 +25,7 @@ post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
             #disable some warnings of Pods
+            puts "ddd"
             config.build_settings['CLANG_WARN_DOCUMENTATION_COMMENTS'] = 'NO'
             config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
         end
@@ -48,7 +47,8 @@ workspace "iosComponent.xcworkspace"
 
 target "MainApp" do
     project 'MainApp/MainApp.xcodeproj'
-    mediatorPods
+#    mediatorPods
+#    pod 'DoubleConversion', :podspec => "third-party-podspecs/DoubleConversion.podspec"
 end
 
 #target "TestModuleA" do
@@ -60,6 +60,7 @@ target "Common" do
     project 'Modules/Common/Common.xcodeproj'
     commonPods
 end
+
 target "Mediator" do
     project 'Modules/Mediator/Mediator.xcodeproj'
     mediatorPods

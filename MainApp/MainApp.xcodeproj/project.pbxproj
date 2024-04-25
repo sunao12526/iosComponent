@@ -15,9 +15,7 @@
 		AFE64FD22BD0FE2E008A5DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD12BD0FE2E008A5DC4 /* Assets.xcassets */; };
 		AFE64FD52BD0FE2E008A5DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD32BD0FE2E008A5DC4 /* LaunchScreen.storyboard */; };
 		AFE64FD82BD0FE2E008A5DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE64FD72BD0FE2E008A5DC4 /* main.m */; };
-		AFE650602BD269D7008A5DC4 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE650482BD26320008A5DC4 /* libCommon.a */; };
-		AFE650622BD26A8A008A5DC4 /* libMediator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE650612BD26A8A008A5DC4 /* libMediator.a */; };
-		AFE6507E2BD26C78008A5DC4 /* libTestModuleA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6507D2BD26BA1008A5DC4 /* libTestModuleA.a */; };
+		AFE650932BDA3619008A5DC4 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE650482BD26320008A5DC4 /* libCommon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE6507E2BD26C78008A5DC4 /* libTestModuleA.a in Frameworks */,
-				AFE650622BD26A8A008A5DC4 /* libMediator.a in Frameworks */,
-				AFE650602BD269D7008A5DC4 /* libCommon.a in Frameworks */,
+				AFE650932BDA3619008A5DC4 /* libCommon.a in Frameworks */,
 				9B577254680E1BC1C26F39B3 /* libPods-MainApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
