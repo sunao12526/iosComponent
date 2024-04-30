@@ -7,11 +7,11 @@
 
 #import "Mediator.h"
 #import "AFNetworking.h"
-#import "TestModuleA/TestModuleA.h"
+//#import "TestModuleA/TestModuleA.h"
 @implementation Mediator
 + (void)load {
   [AFHTTPSessionManager new];
-    [TestModuleA new];
+//    [TestModuleA new];
   NSLog(@"Common load");
 }
 + (void)initialize {

@@ -12,6 +12,7 @@
 @implementation HomeModule
 
 + (void)load {
+    [TestModuleA new];
     BFRegister(HomeModuleService);
 }
 

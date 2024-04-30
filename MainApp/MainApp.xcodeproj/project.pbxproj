@@ -17,7 +17,8 @@
 		AFE64FD82BD0FE2E008A5DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE64FD72BD0FE2E008A5DC4 /* main.m */; };
 		AFE6510B2BE0C014008A5DC4 /* libMediator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6510A2BE0C014008A5DC4 /* libMediator.a */; };
 		AFE6510D2BE0C0B8008A5DC4 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE651022BE091B3008A5DC4 /* libCommon.a */; };
-		AFE6510E2BE0C0FC008A5DC4 /* libTestModuleA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6507D2BD26BA1008A5DC4 /* libTestModuleA.a */; };
+		AFE651A12BE0CDE3008A5DC4 /* libHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6517F2BE0CCBD008A5DC4 /* libHome.a */; };
+		AFE651B22BE0D200008A5DC4 /* libTestModuleA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6507D2BD26BA1008A5DC4 /* libTestModuleA.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE6510E2BE0C0FC008A5DC4 /* libTestModuleA.a in Frameworks */,
+				AFE651B22BE0D200008A5DC4 /* libTestModuleA.a in Frameworks */,
+				AFE651A12BE0CDE3008A5DC4 /* libHome.a in Frameworks */,
 				AFE6510D2BE0C0B8008A5DC4 /* libCommon.a in Frameworks */,
 				AFE6510B2BE0C014008A5DC4 /* libMediator.a in Frameworks */,
 				9B577254680E1BC1C26F39B3 /* libPods-MainApp.a in Frameworks */,
