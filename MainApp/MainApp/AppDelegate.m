@@ -8,12 +8,11 @@
 #import "AppDelegate.h"
 #import "AFNetworking.h"
 #import "BifrostHeader.h"
-//#import "Common/Common.h"
-//#import "commo"
+#import "GCDAsyncSocket.h"
+
+#import "Common/Common.h"
 //#import "Mediator/Mediator.h"
 //#import "TestModuleA/TestModuleA.h"
-//#import "CocoaAsyncSocket/GCDAsyncSocket.h"
-#import "GCDAsyncSocket.h"
 @interface AppDelegate ()
 
 @end
@@ -26,7 +25,7 @@
 //    [GCDAsyncSocket new];
 //    [AFHTTPSessionManager alloc];
     [[Bifrost alloc]init];
-//    Common *ddd = [Common new];
+    Common *ddd = [Common new];
 //    Mediator *mmm = [Mediator new];
 //    TestModuleA *aaa = [TestModuleA new];
     return YES;

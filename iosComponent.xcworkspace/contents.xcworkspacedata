@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MainApp/../Modules/Common/Common.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MainApp/MainApp.xcodeproj">
    </FileRef>
    <FileRef

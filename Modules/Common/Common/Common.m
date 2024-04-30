@@ -8,5 +8,10 @@
 #import "Common.h"
 
 @implementation Common
-
++ (void)load {
+  NSLog(@"Common load");
+}
++ (void)initialize {
+  NSLog(@"Common initialize");
+}
 @end

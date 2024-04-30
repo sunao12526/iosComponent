@@ -15,6 +15,7 @@
 		AFE64FD22BD0FE2E008A5DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD12BD0FE2E008A5DC4 /* Assets.xcassets */; };
 		AFE64FD52BD0FE2E008A5DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD32BD0FE2E008A5DC4 /* LaunchScreen.storyboard */; };
 		AFE64FD82BD0FE2E008A5DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE64FD72BD0FE2E008A5DC4 /* main.m */; };
+		AFE651032BE091B3008A5DC4 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE651022BE091B3008A5DC4 /* libCommon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		AFE650782BD26BA1008A5DC4 /* TestModuleA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestModuleA.xcodeproj; path = ../Modules/TestModuleA/TestModuleA.xcodeproj; sourceTree = "<group>"; };
 		AFE650C52BDB8EB5008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE650E12BE08D04008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE651022BE091B3008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF401BCB66159505E22006F9 /* libPods-MainApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE651032BE091B3008A5DC4 /* libCommon.a in Frameworks */,
 				9B577254680E1BC1C26F39B3 /* libPods-MainApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +121,7 @@
 		E6DAD1FA8466610323D4DCA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFE651022BE091B3008A5DC4 /* libCommon.a */,
 				AFE650E12BE08D04008A5DC4 /* libCommon.a */,
 				AFE650C52BDB8EB5008A5DC4 /* libCommon.a */,
 				EF401BCB66159505E22006F9 /* libPods-MainApp.a */,
