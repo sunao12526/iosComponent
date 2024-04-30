@@ -15,7 +15,6 @@
 		AFE64FD22BD0FE2E008A5DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD12BD0FE2E008A5DC4 /* Assets.xcassets */; };
 		AFE64FD52BD0FE2E008A5DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD32BD0FE2E008A5DC4 /* LaunchScreen.storyboard */; };
 		AFE64FD82BD0FE2E008A5DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE64FD72BD0FE2E008A5DC4 /* main.m */; };
-		AFE650932BDA3619008A5DC4 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE650482BD26320008A5DC4 /* libCommon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +42,9 @@
 		AFE64FD42BD0FE2E008A5DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFE64FD62BD0FE2E008A5DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE64FD72BD0FE2E008A5DC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AFE650482BD26320008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFE650612BD26A8A008A5DC4 /* libMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMediator.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE650782BD26BA1008A5DC4 /* TestModuleA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestModuleA.xcodeproj; path = ../Modules/TestModuleA/TestModuleA.xcodeproj; sourceTree = "<group>"; };
+		AFE650C52BDB8EB5008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE650E12BE08D04008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF401BCB66159505E22006F9 /* libPods-MainApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE650932BDA3619008A5DC4 /* libCommon.a in Frameworks */,
 				9B577254680E1BC1C26F39B3 /* libPods-MainApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,8 +118,8 @@
 		E6DAD1FA8466610323D4DCA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AFE650612BD26A8A008A5DC4 /* libMediator.a */,
-				AFE650482BD26320008A5DC4 /* libCommon.a */,
+				AFE650E12BE08D04008A5DC4 /* libCommon.a */,
+				AFE650C52BDB8EB5008A5DC4 /* libCommon.a */,
 				EF401BCB66159505E22006F9 /* libPods-MainApp.a */,
 			);
 			name = Frameworks;
@@ -138,6 +136,7 @@
 				AFE64FBE2BD0FE2A008A5DC4 /* Sources */,
 				AFE64FBF2BD0FE2A008A5DC4 /* Frameworks */,
 				AFE64FC02BD0FE2A008A5DC4 /* Resources */,
+				336168FA1933622C24F18B72 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +209,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		336168FA1933622C24F18B72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainApp/Pods-MainApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainApp/Pods-MainApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MainApp/Pods-MainApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DEFF9A84749C3D3F9E042928 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,6 +395,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -393,6 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MainApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -427,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MainApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
