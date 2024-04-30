@@ -11,8 +11,8 @@
 #import "GCDAsyncSocket.h"
 
 #import "Common/Common.h"
-//#import "Mediator/Mediator.h"
-//#import "TestModuleA/TestModuleA.h"
+#import "Mediator/Mediator.h"
+#import "TestModuleA/TestModuleA.h"
 @interface AppDelegate ()
 
 @end
@@ -26,8 +26,8 @@
 //    [AFHTTPSessionManager alloc];
     [[Bifrost alloc]init];
     Common *ddd = [Common new];
-//    Mediator *mmm = [Mediator new];
-//    TestModuleA *aaa = [TestModuleA new];
+    Mediator *mmm = [Mediator new];
+    TestModuleA *aaa = [TestModuleA new];
     return YES;
 }
 

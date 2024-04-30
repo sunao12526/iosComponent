@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2288810ACC6C1788FD13CCF8 /* libPods-Mediator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CC5D1BBA85DC169B007A7A /* libPods-Mediator.a */; };
 		AFE650412BD10AFF008A5DC4 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE650402BD10AFF008A5DC4 /* Mediator.m */; };
 		AFE650422BD10AFF008A5DC4 /* Mediator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFE6503F2BD10AFF008A5DC4 /* Mediator.h */; };
+		AFE6511A2BE0CAD2008A5DC4 /* ModuleExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE651102BE0CAD2008A5DC4 /* ModuleExceptionHandler.m */; };
+		AFE6511B2BE0CAD2008A5DC4 /* ModuleBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE651132BE0CAD2008A5DC4 /* ModuleBundle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,9 +29,19 @@
 
 /* Begin PBXFileReference section */
 		97F3E05A6CA8C66054CD1F49 /* Pods-Mediator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mediator.debug.xcconfig"; path = "Target Support Files/Pods-Mediator/Pods-Mediator.debug.xcconfig"; sourceTree = "<group>"; };
+		A9CC5D1BBA85DC169B007A7A /* libPods-Mediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mediator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE6503C2BD10AFF008A5DC4 /* libMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMediator.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE6503F2BD10AFF008A5DC4 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
 		AFE650402BD10AFF008A5DC4 /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		AFE651102BE0CAD2008A5DC4 /* ModuleExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleExceptionHandler.m; sourceTree = "<group>"; };
+		AFE651112BE0CAD2008A5DC4 /* ModuleBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleBundle.h; sourceTree = "<group>"; };
+		AFE651122BE0CAD2008A5DC4 /* ModuleExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleExceptionHandler.h; sourceTree = "<group>"; };
+		AFE651132BE0CAD2008A5DC4 /* ModuleBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleBundle.m; sourceTree = "<group>"; };
+		AFE651152BE0CAD2008A5DC4 /* HomeModuleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModuleService.h; sourceTree = "<group>"; };
+		AFE651162BE0CAD2008A5DC4 /* SaleModuleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleModuleService.h; sourceTree = "<group>"; };
+		AFE651172BE0CAD2008A5DC4 /* GoodsModuleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsModuleService.h; sourceTree = "<group>"; };
+		AFE651182BE0CAD2008A5DC4 /* ShopModuleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopModuleService.h; sourceTree = "<group>"; };
+		AFE651192BE0CAD2008A5DC4 /* LaunchModuleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchModuleService.h; sourceTree = "<group>"; };
 		B5949ACEDC51C577F3BED0CC /* Pods-MainApp-Mediator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainApp-Mediator.release.xcconfig"; path = "Target Support Files/Pods-MainApp-Mediator/Pods-MainApp-Mediator.release.xcconfig"; sourceTree = "<group>"; };
 		D48A2DFBD2B81FC82AA9635A /* Pods-Mediator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mediator.release.xcconfig"; path = "Target Support Files/Pods-Mediator/Pods-Mediator.release.xcconfig"; sourceTree = "<group>"; };
 		E3C7F2A261742EA0D6F99538 /* Pods-MainApp-Mediator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainApp-Mediator.debug.xcconfig"; path = "Target Support Files/Pods-MainApp-Mediator/Pods-MainApp-Mediator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2288810ACC6C1788FD13CCF8 /* libPods-Mediator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0DDE32F855505F0FC4AF49 /* libPods-MainApp-Mediator.a */,
+				A9CC5D1BBA85DC169B007A7A /* libPods-Mediator.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,10 +102,35 @@
 		AFE6503E2BD10AFF008A5DC4 /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
+				AFE6510F2BE0CAD2008A5DC4 /* ModuleHelper */,
+				AFE651142BE0CAD2008A5DC4 /* ModuleService */,
 				AFE6503F2BD10AFF008A5DC4 /* Mediator.h */,
 				AFE650402BD10AFF008A5DC4 /* Mediator.m */,
 			);
 			path = Mediator;
+			sourceTree = "<group>";
+		};
+		AFE6510F2BE0CAD2008A5DC4 /* ModuleHelper */ = {
+			isa = PBXGroup;
+			children = (
+				AFE651112BE0CAD2008A5DC4 /* ModuleBundle.h */,
+				AFE651132BE0CAD2008A5DC4 /* ModuleBundle.m */,
+				AFE651122BE0CAD2008A5DC4 /* ModuleExceptionHandler.h */,
+				AFE651102BE0CAD2008A5DC4 /* ModuleExceptionHandler.m */,
+			);
+			path = ModuleHelper;
+			sourceTree = "<group>";
+		};
+		AFE651142BE0CAD2008A5DC4 /* ModuleService */ = {
+			isa = PBXGroup;
+			children = (
+				AFE651172BE0CAD2008A5DC4 /* GoodsModuleService.h */,
+				AFE651152BE0CAD2008A5DC4 /* HomeModuleService.h */,
+				AFE651192BE0CAD2008A5DC4 /* LaunchModuleService.h */,
+				AFE651162BE0CAD2008A5DC4 /* SaleModuleService.h */,
+				AFE651182BE0CAD2008A5DC4 /* ShopModuleService.h */,
+			);
+			path = ModuleService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +202,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MainApp-Mediator-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Mediator-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -176,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE6511A2BE0CAD2008A5DC4 /* ModuleExceptionHandler.m in Sources */,
+				AFE6511B2BE0CAD2008A5DC4 /* ModuleBundle.m in Sources */,
 				AFE650412BD10AFF008A5DC4 /* Mediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +343,7 @@
 		};
 		AFE650462BD10AFF008A5DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F3E05A6CA8C66054CD1F49 /* Pods-Mediator.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
@@ -313,6 +356,7 @@
 		};
 		AFE650472BD10AFF008A5DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D48A2DFBD2B81FC82AA9635A /* Pods-Mediator.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;

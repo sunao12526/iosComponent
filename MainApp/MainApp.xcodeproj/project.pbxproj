@@ -15,7 +15,9 @@
 		AFE64FD22BD0FE2E008A5DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD12BD0FE2E008A5DC4 /* Assets.xcassets */; };
 		AFE64FD52BD0FE2E008A5DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD32BD0FE2E008A5DC4 /* LaunchScreen.storyboard */; };
 		AFE64FD82BD0FE2E008A5DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE64FD72BD0FE2E008A5DC4 /* main.m */; };
-		AFE651032BE091B3008A5DC4 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE651022BE091B3008A5DC4 /* libCommon.a */; };
+		AFE6510B2BE0C014008A5DC4 /* libMediator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6510A2BE0C014008A5DC4 /* libMediator.a */; };
+		AFE6510D2BE0C0B8008A5DC4 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE651022BE091B3008A5DC4 /* libCommon.a */; };
+		AFE6510E2BE0C0FC008A5DC4 /* libTestModuleA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6507D2BD26BA1008A5DC4 /* libTestModuleA.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = AFE6506C2BD26B58008A5DC4;
 			remoteInfo = TestModuleA;
+		};
+		AFE651502BE0CBA6008A5DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE6514C2BE0CBA5008A5DC4 /* Shop.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AFE651402BE0CBA5008A5DC4;
+			remoteInfo = Shop;
+		};
+		AFE6517E2BE0CCBD008A5DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE6517A2BE0CCBD008A5DC4 /* Home.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AFE651252BE0CB38008A5DC4;
+			remoteInfo = Home;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,6 +63,9 @@
 		AFE650C52BDB8EB5008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE650E12BE08D04008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE651022BE091B3008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE6510A2BE0C014008A5DC4 /* libMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMediator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE6514C2BE0CBA5008A5DC4 /* Shop.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Shop.xcodeproj; path = ../Modules/Shop/Shop.xcodeproj; sourceTree = "<group>"; };
+		AFE6517A2BE0CCBD008A5DC4 /* Home.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Home.xcodeproj; path = ../Modules/Home/Home.xcodeproj; sourceTree = "<group>"; };
 		EF401BCB66159505E22006F9 /* libPods-MainApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,7 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE651032BE091B3008A5DC4 /* libCommon.a in Frameworks */,
+				AFE6510E2BE0C0FC008A5DC4 /* libTestModuleA.a in Frameworks */,
+				AFE6510D2BE0C0B8008A5DC4 /* libCommon.a in Frameworks */,
+				AFE6510B2BE0C014008A5DC4 /* libMediator.a in Frameworks */,
 				9B577254680E1BC1C26F39B3 /* libPods-MainApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +87,8 @@
 		AFE64FB92BD0FE2A008A5DC4 = {
 			isa = PBXGroup;
 			children = (
+				AFE6517A2BE0CCBD008A5DC4 /* Home.xcodeproj */,
+				AFE6514C2BE0CBA5008A5DC4 /* Shop.xcodeproj */,
 				AFE650782BD26BA1008A5DC4 /* TestModuleA.xcodeproj */,
 				AFE64FC42BD0FE2A008A5DC4 /* MainApp */,
 				AFE64FC32BD0FE2A008A5DC4 /* Products */,
@@ -108,6 +131,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AFE6514D2BE0CBA5008A5DC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFE651512BE0CBA6008A5DC4 /* libShop.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFE6517B2BE0CCBD008A5DC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFE6517F2BE0CCBD008A5DC4 /* libHome.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C4B3F201EE3FF2D79F23C6C8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +160,7 @@
 		E6DAD1FA8466610323D4DCA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFE6510A2BE0C014008A5DC4 /* libMediator.a */,
 				AFE651022BE091B3008A5DC4 /* libCommon.a */,
 				AFE650E12BE08D04008A5DC4 /* libCommon.a */,
 				AFE650C52BDB8EB5008A5DC4 /* libCommon.a */,
@@ -178,6 +218,14 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = AFE6517B2BE0CCBD008A5DC4 /* Products */;
+					ProjectRef = AFE6517A2BE0CCBD008A5DC4 /* Home.xcodeproj */;
+				},
+				{
+					ProductGroup = AFE6514D2BE0CBA5008A5DC4 /* Products */;
+					ProjectRef = AFE6514C2BE0CBA5008A5DC4 /* Shop.xcodeproj */;
+				},
+				{
 					ProductGroup = AFE650792BD26BA1008A5DC4 /* Products */;
 					ProjectRef = AFE650782BD26BA1008A5DC4 /* TestModuleA.xcodeproj */;
 				},
@@ -195,6 +243,20 @@
 			fileType = archive.ar;
 			path = libTestModuleA.a;
 			remoteRef = AFE6507C2BD26BA1008A5DC4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFE651512BE0CBA6008A5DC4 /* libShop.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libShop.a;
+			remoteRef = AFE651502BE0CBA6008A5DC4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFE6517F2BE0CCBD008A5DC4 /* libHome.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHome.a;
+			remoteRef = AFE6517E2BE0CCBD008A5DC4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

@@ -26,7 +26,7 @@ post_install do |installer|
             #disable some warnings of Pods
             puts "ddd"
 #            config.build_settings['CLANG_WARN_DOCUMENTATION_COMMENTS'] = 'NO'
-#            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
         end
     end
 end
@@ -86,3 +86,12 @@ target "MainApp" do
   commonPods
   mediatorPods
 end
+target "Common" do
+  project 'Modules/Common/Common.xcodeproj'
+  commonPods
+end
+target "Mediator" do
+  project 'Modules/Mediator/Mediator.xcodeproj'
+  mediatorPods
+end
+ 

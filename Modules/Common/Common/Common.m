@@ -6,9 +6,10 @@
 //
 
 #import "Common.h"
-
+#import "AFNetworking.h"
 @implementation Common
 + (void)load {
+  [AFHTTPSessionManager new];
   NSLog(@"Common load");
 }
 + (void)initialize {

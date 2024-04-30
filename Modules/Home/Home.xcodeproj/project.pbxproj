@@ -7,126 +7,144 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FAA28C0326974FD020BB863 /* libPods-Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 063C9E9C2CCEC7DC53554327 /* libPods-Common.a */; };
-		AFE650F42BE09139008A5DC4 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE650F32BE09139008A5DC4 /* Common.m */; };
-		AFE650F52BE09139008A5DC4 /* Common.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFE650F22BE09139008A5DC4 /* Common.h */; };
+		AFE651772BE0CC36008A5DC4 /* HomeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE6516D2BE0CC36008A5DC4 /* HomeModule.m */; };
+		AFE651782BE0CC36008A5DC4 /* HomeBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE6516E2BE0CC36008A5DC4 /* HomeBundle.m */; };
+		AFE651792BE0CC36008A5DC4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE651732BE0CC36008A5DC4 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AFE650ED2BE09139008A5DC4 /* CopyFiles */ = {
+		AFE651232BE0CB38008A5DC4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				AFE650F52BE09139008A5DC4 /* Common.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		063C9E9C2CCEC7DC53554327 /* libPods-Common.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Common.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		47C43A5F472AF2AC45A45FA1 /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
-		AFE650EF2BE09139008A5DC4 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFE650F22BE09139008A5DC4 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		AFE650F32BE09139008A5DC4 /* Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
-		D49BC3E4A154ABC441071AFB /* Pods-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.release.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.release.xcconfig"; sourceTree = "<group>"; };
+		AFE651252BE0CB38008A5DC4 /* libHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHome.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE651682BE0CC36008A5DC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE6516C2BE0CC36008A5DC4 /* HomeBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeBundle.h; sourceTree = "<group>"; };
+		AFE6516D2BE0CC36008A5DC4 /* HomeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModule.m; sourceTree = "<group>"; };
+		AFE6516E2BE0CC36008A5DC4 /* HomeBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeBundle.m; sourceTree = "<group>"; };
+		AFE6516F2BE0CC36008A5DC4 /* HomeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModule.h; sourceTree = "<group>"; };
+		AFE651732BE0CC36008A5DC4 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		AFE651742BE0CC36008A5DC4 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
+		AFE651752BE0CC36008A5DC4 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AFE650EC2BE09139008A5DC4 /* Frameworks */ = {
+		AFE651222BE0CB38008A5DC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FAA28C0326974FD020BB863 /* libPods-Common.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AFE650E62BE09139008A5DC4 = {
+		AFE6511C2BE0CB38008A5DC4 = {
 			isa = PBXGroup;
 			children = (
-				AFE650F12BE09139008A5DC4 /* Common */,
-				AFE650F02BE09139008A5DC4 /* Products */,
-				B98A6785D110357679FB7B1C /* Pods */,
-				C0F4FCD3523DE7232C904A29 /* Frameworks */,
+				AFE651692BE0CC36008A5DC4 /* Home */,
+				AFE651672BE0CC36008A5DC4 /* HomeBundle */,
+				AFE651262BE0CB38008A5DC4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AFE650F02BE09139008A5DC4 /* Products */ = {
+		AFE651262BE0CB38008A5DC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFE650EF2BE09139008A5DC4 /* libCommon.a */,
+				AFE651252BE0CB38008A5DC4 /* libHome.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AFE650F12BE09139008A5DC4 /* Common */ = {
+		AFE651672BE0CC36008A5DC4 /* HomeBundle */ = {
 			isa = PBXGroup;
 			children = (
-				AFE650F22BE09139008A5DC4 /* Common.h */,
-				AFE650F32BE09139008A5DC4 /* Common.m */,
+				AFE651682BE0CC36008A5DC4 /* Info.plist */,
 			);
-			path = Common;
+			path = HomeBundle;
 			sourceTree = "<group>";
 		};
-		B98A6785D110357679FB7B1C /* Pods */ = {
+		AFE651692BE0CC36008A5DC4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				47C43A5F472AF2AC45A45FA1 /* Pods-Common.debug.xcconfig */,
-				D49BC3E4A154ABC441071AFB /* Pods-Common.release.xcconfig */,
+				AFE651712BE0CC36008A5DC4 /* Feature */,
+				AFE6516B2BE0CC36008A5DC4 /* Module */,
 			);
-			name = Pods;
-			path = ../../Pods;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		C0F4FCD3523DE7232C904A29 /* Frameworks */ = {
+		AFE6516B2BE0CC36008A5DC4 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				063C9E9C2CCEC7DC53554327 /* libPods-Common.a */,
+				AFE6516C2BE0CC36008A5DC4 /* HomeBundle.h */,
+				AFE6516D2BE0CC36008A5DC4 /* HomeModule.m */,
+				AFE6516E2BE0CC36008A5DC4 /* HomeBundle.m */,
+				AFE6516F2BE0CC36008A5DC4 /* HomeModule.h */,
 			);
-			name = Frameworks;
+			path = Module;
+			sourceTree = "<group>";
+		};
+		AFE651712BE0CC36008A5DC4 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				AFE651722BE0CC36008A5DC4 /* HomePage */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		AFE651722BE0CC36008A5DC4 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				AFE651732BE0CC36008A5DC4 /* HomeViewController.m */,
+				AFE651742BE0CC36008A5DC4 /* home.storyboard */,
+				AFE651752BE0CC36008A5DC4 /* HomeViewController.h */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AFE650EE2BE09139008A5DC4 /* Common */ = {
+		AFE651242BE0CB38008A5DC4 /* Home */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFE650F82BE09139008A5DC4 /* Build configuration list for PBXNativeTarget "Common" */;
+			buildConfigurationList = AFE6512E2BE0CB38008A5DC4 /* Build configuration list for PBXNativeTarget "Home" */;
 			buildPhases = (
-				6F2EC474BBB4B7F411016FC4 /* [CP] Check Pods Manifest.lock */,
-				AFE650EB2BE09139008A5DC4 /* Sources */,
-				AFE650EC2BE09139008A5DC4 /* Frameworks */,
-				AFE650ED2BE09139008A5DC4 /* CopyFiles */,
+				AFE651212BE0CB38008A5DC4 /* Sources */,
+				AFE651222BE0CB38008A5DC4 /* Frameworks */,
+				AFE651232BE0CB38008A5DC4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Common;
-			productName = Common;
-			productReference = AFE650EF2BE09139008A5DC4 /* libCommon.a */;
+			name = Home;
+			productName = Home;
+			productReference = AFE651252BE0CB38008A5DC4 /* libHome.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AFE650E72BE09139008A5DC4 /* Project object */ = {
+		AFE6511D2BE0CB38008A5DC4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					AFE650EE2BE09139008A5DC4 = {
+					AFE651242BE0CB38008A5DC4 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = AFE650EA2BE09139008A5DC4 /* Build configuration list for PBXProject "Common" */;
+			buildConfigurationList = AFE651202BE0CB38008A5DC4 /* Build configuration list for PBXProject "Home" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,54 +152,31 @@
 				en,
 				Base,
 			);
-			mainGroup = AFE650E62BE09139008A5DC4;
-			productRefGroup = AFE650F02BE09139008A5DC4 /* Products */;
+			mainGroup = AFE6511C2BE0CB38008A5DC4;
+			productRefGroup = AFE651262BE0CB38008A5DC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFE650EE2BE09139008A5DC4 /* Common */,
+				AFE651242BE0CB38008A5DC4 /* Home */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		6F2EC474BBB4B7F411016FC4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Common-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		AFE650EB2BE09139008A5DC4 /* Sources */ = {
+		AFE651212BE0CB38008A5DC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE650F42BE09139008A5DC4 /* Common.m in Sources */,
+				AFE651772BE0CC36008A5DC4 /* HomeModule.m in Sources */,
+				AFE651782BE0CC36008A5DC4 /* HomeBundle.m in Sources */,
+				AFE651792BE0CC36008A5DC4 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AFE650F62BE09139008A5DC4 /* Debug */ = {
+		AFE6512C2BE0CB38008A5DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,7 +237,7 @@
 			};
 			name = Debug;
 		};
-		AFE650F72BE09139008A5DC4 /* Release */ = {
+		AFE6512D2BE0CB38008A5DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,28 +292,24 @@
 			};
 			name = Release;
 		};
-		AFE650F92BE09139008A5DC4 /* Debug */ = {
+		AFE6512F2BE0CB38008A5DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47C43A5F472AF2AC45A45FA1 /* Pods-Common.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		AFE650FA2BE09139008A5DC4 /* Release */ = {
+		AFE651302BE0CB38008A5DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D49BC3E4A154ABC441071AFB /* Pods-Common.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFE650EA2BE09139008A5DC4 /* Build configuration list for PBXProject "Common" */ = {
+		AFE651202BE0CB38008A5DC4 /* Build configuration list for PBXProject "Home" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFE650F62BE09139008A5DC4 /* Debug */,
-				AFE650F72BE09139008A5DC4 /* Release */,
+				AFE6512C2BE0CB38008A5DC4 /* Debug */,
+				AFE6512D2BE0CB38008A5DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFE650F82BE09139008A5DC4 /* Build configuration list for PBXNativeTarget "Common" */ = {
+		AFE6512E2BE0CB38008A5DC4 /* Build configuration list for PBXNativeTarget "Home" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFE650F92BE09139008A5DC4 /* Debug */,
-				AFE650FA2BE09139008A5DC4 /* Release */,
+				AFE6512F2BE0CB38008A5DC4 /* Debug */,
+				AFE651302BE0CB38008A5DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AFE650E72BE09139008A5DC4 /* Project object */;
+	rootObject = AFE6511D2BE0CB38008A5DC4 /* Project object */;
 }
