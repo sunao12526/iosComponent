@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "BifrostHeader.h"
 #import "HomeModuleService.h"
-#import "TestModuleA/TestModuleA.h"
+//#import "TestModuleA/TestModuleA.h"
+//#import "TestModuleA.h"
+#import "Common.h"
+#import "ShopModule.h"
 @interface HomeModule : NSObject<BifrostModuleProtocol, HomeModuleService>
 
 @end

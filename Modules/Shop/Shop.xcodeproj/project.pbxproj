@@ -96,10 +96,10 @@
 		AFE651572BE0CC22008A5DC4 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				AFE651582BE0CC22008A5DC4 /* ShopModule.h */,
-				AFE651592BE0CC22008A5DC4 /* ShopBundle.m */,
-				AFE6515A2BE0CC22008A5DC4 /* ShopModule.m */,
 				AFE6515B2BE0CC22008A5DC4 /* ShopBundle.h */,
+				AFE651592BE0CC22008A5DC4 /* ShopBundle.m */,
+				AFE651582BE0CC22008A5DC4 /* ShopModule.h */,
+				AFE6515A2BE0CC22008A5DC4 /* ShopModule.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -250,6 +250,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${SRCROOT}/../../Pods/\"/**",
+					"\"${SRCROOT}/../Mediator/\"/**",
+					"\"${SRCROOT}/../Common/\"/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -305,6 +310,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${SRCROOT}/../../Pods/\"/**",
+					"\"${SRCROOT}/../Mediator/\"/**",
+					"\"${SRCROOT}/../Common/\"/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -319,6 +329,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -331,6 +342,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -232,6 +232,7 @@
 					"\"${SRCROOT}/../../Pods/\"/**",
 					"\"${SRCROOT}/../Mediator/\"/**",
 					"\"${SRCROOT}/../Common/\"/**",
+					"\"${SRCROOT}/../Shop/\"/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
@@ -292,6 +293,7 @@
 					"\"${SRCROOT}/../../Pods/\"/**",
 					"\"${SRCROOT}/../Mediator/\"/**",
 					"\"${SRCROOT}/../Common/\"/**",
+					"\"${SRCROOT}/../Shop/\"/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
@@ -307,6 +309,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -319,6 +322,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8392A5FS3K;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFE650712BD26B58008A5DC4 /* TestModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE650702BD26B58008A5DC4 /* TestModuleA.m */; };
-		AFE650722BD26B58008A5DC4 /* TestModuleA.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFE6506F2BD26B58008A5DC4 /* TestModuleA.h */; };
+		AFE651BC2BE0D58A008A5DC4 /* TestModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE651BA2BE0D58A008A5DC4 /* TestModuleA.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +17,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				AFE650722BD26B58008A5DC4 /* TestModuleA.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		AFE6506C2BD26B58008A5DC4 /* libTestModuleA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestModuleA.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFE6506F2BD26B58008A5DC4 /* TestModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModuleA.h; sourceTree = "<group>"; };
-		AFE650702BD26B58008A5DC4 /* TestModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModuleA.m; sourceTree = "<group>"; };
+		AFE651BA2BE0D58A008A5DC4 /* TestModuleA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModuleA.m; sourceTree = "<group>"; };
+		AFE651BB2BE0D58A008A5DC4 /* TestModuleA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModuleA.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +58,8 @@
 		AFE6506E2BD26B58008A5DC4 /* TestModuleA */ = {
 			isa = PBXGroup;
 			children = (
-				AFE6506F2BD26B58008A5DC4 /* TestModuleA.h */,
-				AFE650702BD26B58008A5DC4 /* TestModuleA.m */,
+				AFE651BB2BE0D58A008A5DC4 /* TestModuleA.h */,
+				AFE651BA2BE0D58A008A5DC4 /* TestModuleA.m */,
 			);
 			path = TestModuleA;
 			sourceTree = "<group>";
@@ -123,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE650712BD26B58008A5DC4 /* TestModuleA.m in Sources */,
+				AFE651BC2BE0D58A008A5DC4 /* TestModuleA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

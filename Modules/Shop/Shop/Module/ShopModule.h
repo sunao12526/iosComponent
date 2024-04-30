@@ -9,7 +9,7 @@
 #import "ModuleBundle.h"
 #import "BifrostHeader.h"
 #import "ShopModuleService.h"
-
+#import "Mediator.h"
 @interface ShopModule : ModuleBundle<BifrostModuleProtocol, ShopModuleService>
 
 @end

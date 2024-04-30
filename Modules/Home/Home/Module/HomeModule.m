@@ -8,11 +8,12 @@
 
 #import "HomeModule.h"
 #import "HomeViewController.h"
-
+//#import "TestModuleA/TestModuleA.h"
+//#import "TestModuleA.h"
 @implementation HomeModule
 
 + (void)load {
-    [TestModuleA new];
+//    [TestModuleA new];
     BFRegister(HomeModuleService);
 }
 
