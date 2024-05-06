@@ -6,14 +6,13 @@
 //
 
 #import "AppDelegate.h"
-#import "AFNetworking.h"
 #import "BifrostHeader.h"
-#import "GCDAsyncSocket.h"
 
-//#import "Common/Common.h"
+#import "Common/Common.h"
 //#import "Mediator/Mediator.h"
 //#import "TestModuleA/TestModuleA.h"
-
+//#import "Mediator.h"
+//#import "Mediator/Home"
 #define Safe(obj) obj ? obj : [NSNull null]
 
 @interface AppDelegate ()
@@ -24,11 +23,9 @@
 @synthesize window = _window;
  
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //    [AFHTTPSessionManager alloc];
-    //    [[Bifrost alloc]init];
-    //    Common *ddd = [Common new];
-    //    Mediator *mmm = [Mediator new];
-    //    TestModuleA *aaa = [TestModuleA new];
+//        Common *ddd = [Common new];
+//        Mediator *mmm = [Mediator new];
+//        TestModuleA *aaa = [TestModuleA new];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

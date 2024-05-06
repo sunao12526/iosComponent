@@ -25,7 +25,6 @@ post_install do |installer|
         target.build_configurations.each do |config|
             #disable some warnings of Pods
             puts "ddd"
-#            config.build_settings['CLANG_WARN_DOCUMENTATION_COMMENTS'] = 'NO'
             config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
         end
     end
@@ -60,6 +59,7 @@ def commonPods
     pod 'BlocksKit'
     pod 'WebViewJavascriptBridge'
     pod 'YYKit'
+    pod 'FMDB'
 #    pod 'MLeaksFinder'
 #    pod 'AsyncDisplayKit'
 end
@@ -67,7 +67,6 @@ end
 def mediatorPods
     pod 'Bifrost' 
 end
-
 
 #定义一字典
  pods_dic = {
