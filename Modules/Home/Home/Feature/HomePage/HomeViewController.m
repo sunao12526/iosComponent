@@ -17,8 +17,6 @@
 //#import "YZWeakDefine.h"
 
 @interface HomeViewController ()
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
-//@property (nonatomic, strong) YZSTableViewModel *viewModel;
 @end
 
 @implementation HomeViewController
@@ -26,7 +24,7 @@
 + (void)load {
     [Bifrost bindURL:kRouteHomePage
            toHandler:^id _Nullable(NSDictionary * _Nullable parameters) {
-        UIViewController *vc = [[HomeBundle storyboardWithName:@"home"] instantiateViewControllerWithIdentifier:@"HomeViewController"];
+        UIViewController *vc = [HomeViewController new];
         return vc;
     }];
 }
@@ -36,6 +34,8 @@
     self.title = @"Bifrost";
     self.navigationItem.backBarButtonItem.title = @"";
     self.navigationItem.backBarButtonItem.title = @"";
+    self.view.backgroundColor = [UIColor redColor];
+    
 }
 
  

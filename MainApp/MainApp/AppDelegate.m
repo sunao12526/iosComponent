@@ -13,40 +13,31 @@
 //#import "Common/Common.h"
 //#import "Mediator/Mediator.h"
 //#import "TestModuleA/TestModuleA.h"
+
+#define Safe(obj) obj ? obj : [NSNull null]
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
-
+@synthesize window = _window;
+ 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-//    [GCDAsyncSocket new];
-//    [AFHTTPSessionManager alloc];
-//    [[Bifrost alloc]init];
-//    Common *ddd = [Common new];
-//    Mediator *mmm = [Mediator new];
-//    TestModuleA *aaa = [TestModuleA new];
+    //    [AFHTTPSessionManager alloc];
+    //    [[Bifrost alloc]init];
+    //    Common *ddd = [Common new];
+    //    Mediator *mmm = [Mediator new];
+    //    TestModuleA *aaa = [TestModuleA new];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    if (@available(iOS 13.0, *)){
+        //指定浅色模式
+        self.window.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    };
+    [Bifrost checkAllModulesWithSelector:_cmd arguments:@[Safe(application), Safe(launchOptions)]];
     return YES;
 }
-
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
-}
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
-
 
 @end

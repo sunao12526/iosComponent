@@ -32,7 +32,6 @@
 		AFE6516E2BE0CC36008A5DC4 /* HomeBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeBundle.m; sourceTree = "<group>"; };
 		AFE6516F2BE0CC36008A5DC4 /* HomeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModule.h; sourceTree = "<group>"; };
 		AFE651732BE0CC36008A5DC4 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		AFE651742BE0CC36008A5DC4 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
 		AFE651752BE0CC36008A5DC4 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,9 +102,8 @@
 		AFE651722BE0CC36008A5DC4 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				AFE651732BE0CC36008A5DC4 /* HomeViewController.m */,
-				AFE651742BE0CC36008A5DC4 /* home.storyboard */,
 				AFE651752BE0CC36008A5DC4 /* HomeViewController.h */,
+				AFE651732BE0CC36008A5DC4 /* HomeViewController.m */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -232,7 +230,6 @@
 					"\"${SRCROOT}/../../Pods/\"/**",
 					"\"${SRCROOT}/../Mediator/\"/**",
 					"\"${SRCROOT}/../Common/\"/**",
-					"\"${SRCROOT}/../Shop/\"/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
@@ -293,7 +290,6 @@
 					"\"${SRCROOT}/../../Pods/\"/**",
 					"\"${SRCROOT}/../Mediator/\"/**",
 					"\"${SRCROOT}/../Common/\"/**",
-					"\"${SRCROOT}/../Shop/\"/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
