@@ -33,12 +33,18 @@ PODS:
     - BlocksKit/DynamicDelegate
   - CocoaAsyncSocket (7.6.5)
   - CTMediator (48)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - FSCalendar (2.8.4)
   - ISO8601DateFormatterValueTransformer (0.6.1):
     - RKValueTransformers (~> 1.1.0)
   - JLRoutes (2.1)
   - JSONModel (1.8.0)
   - KVOController (1.2.0)
+  - Mantle (2.2.0):
+    - Mantle/extobjc (= 2.2.0)
+  - Mantle/extobjc (2.2.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.5)
   - MLSOAppDelegate (0.0.1)
@@ -60,6 +66,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (8.0.0):
     - PromiseKit/CorePromise
+  - PromisesObjC (2.2.0)
   - RestKit (0.27.3):
     - RestKit/Core (= 0.27.3)
   - RestKit/Core (0.27.3):
@@ -88,6 +95,8 @@ PODS:
   - TransitionKit (2.2.1)
   - "UITableView+FDTemplateLayoutCell (1.6)"
   - WebViewJavascriptBridge (6.0.3)
+  - YTKNetwork (3.0.6):
+    - AFNetworking/NSURLSession (~> 4.0)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -99,22 +108,26 @@ DEPENDENCIES:
   - BlocksKit
   - CocoaAsyncSocket
   - CTMediator
+  - FMDB
   - FSCalendar
   - JLRoutes
   - JSONModel
   - KVOController
+  - Mantle
   - MBProgressHUD
   - MJRefresh
   - MLSOAppDelegate
   - MQTTClient
   - Objection
   - PromiseKit
+  - PromisesObjC
   - RestKit
   - RWPromiseKit
   - SDWebImage
   - SocketRocket
   - "UITableView+FDTemplateLayoutCell"
   - WebViewJavascriptBridge
+  - YTKNetwork
   - YYKit
 
 SPEC REPOS:
@@ -124,17 +137,20 @@ SPEC REPOS:
     - BlocksKit
     - CocoaAsyncSocket
     - CTMediator
+    - FMDB
     - FSCalendar
     - ISO8601DateFormatterValueTransformer
     - JLRoutes
     - JSONModel
     - KVOController
+    - Mantle
     - MBProgressHUD
     - MJRefresh
     - MLSOAppDelegate
     - MQTTClient
     - Objection
     - PromiseKit
+    - PromisesObjC
     - RestKit
     - RKValueTransformers
     - RWPromiseKit
@@ -144,6 +160,7 @@ SPEC REPOS:
     - TransitionKit
     - "UITableView+FDTemplateLayoutCell"
     - WebViewJavascriptBridge
+    - YTKNetwork
     - YYKit
   trunk:
     - Bifrost
@@ -155,17 +172,20 @@ SPEC CHECKSUMS:
   BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   CTMediator: 3f3578b525b3a46a7a2f92a99922ec40363f4269
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
   JLRoutes: d755245322b94227662ea3e43492fdca94e05c5b
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  Mantle: c5aa8794a29a022dfbbfc9799af95f477a69b62d
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   MLSOAppDelegate: 721b6f35cf63336eb7a2a2ee3fab12bbc1473ef5
   MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
   Objection: ed03f2219cb22d2b5b893114219fe6c7e3263bde
   PromiseKit: 7039707ba8764b6ce98501debce2489561b038a5
+  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   RestKit: 0baa8b61899d1e00c24f4f2d8aea07ecef0c88bc
   RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
   RWPromiseKit: 23f4bfa24a9c749fbbda48f8d7c40c7bc73221de
@@ -175,8 +195,9 @@ SPEC CHECKSUMS:
   TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
+  YTKNetwork: c16be90b06be003de9e9cd0d3b187cc8eaf35c04
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 5cfb51b3c84709de9e4c9295b2a0ee42aa6c3f24
+PODFILE CHECKSUM: 64c14f60dbf08d0d3e599f94366ec23ae04c3626
 
 COCOAPODS: 1.15.2

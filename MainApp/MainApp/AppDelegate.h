@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TestModuleA.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 

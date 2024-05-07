@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B577254680E1BC1C26F39B3 /* libPods-MainApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF401BCB66159505E22006F9 /* libPods-MainApp.a */; };
 		AF5707132BE8BE8E002648DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5707112BE8BE8E002648DE /* LaunchScreen.storyboard */; };
+		AF5707232BE8DE9E002648DE /* libTestModuleA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6507D2BD26BA1008A5DC4 /* libTestModuleA.a */; };
 		AFE64FC72BD0FE2A008A5DC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE64FC62BD0FE2A008A5DC4 /* AppDelegate.m */; };
 		AFE64FCD2BD0FE2A008A5DC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE64FCC2BD0FE2A008A5DC4 /* ViewController.m */; };
 		AFE64FD22BD0FE2E008A5DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE64FD12BD0FE2E008A5DC4 /* Assets.xcassets */; };
@@ -16,7 +17,6 @@
 		AFE6510B2BE0C014008A5DC4 /* libMediator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6510A2BE0C014008A5DC4 /* libMediator.a */; };
 		AFE6510D2BE0C0B8008A5DC4 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE651022BE091B3008A5DC4 /* libCommon.a */; };
 		AFE651A12BE0CDE3008A5DC4 /* libHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6517F2BE0CCBD008A5DC4 /* libHome.a */; };
-		AFE651B22BE0D200008A5DC4 /* libTestModuleA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE6507D2BD26BA1008A5DC4 /* libTestModuleA.a */; };
 		AFE651BD2BE0D5F5008A5DC4 /* libShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE651512BE0CBA6008A5DC4 /* libShop.a */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5707232BE8DE9E002648DE /* libTestModuleA.a in Frameworks */,
 				AFE651BD2BE0D5F5008A5DC4 /* libShop.a in Frameworks */,
-				AFE651B22BE0D200008A5DC4 /* libTestModuleA.a in Frameworks */,
 				AFE651A12BE0CDE3008A5DC4 /* libHome.a in Frameworks */,
 				AFE6510D2BE0C0B8008A5DC4 /* libCommon.a in Frameworks */,
 				AFE6510B2BE0C014008A5DC4 /* libMediator.a in Frameworks */,
@@ -388,6 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/../TestModuleA/\"/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -443,6 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/../TestModuleA/\"/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -465,11 +467,10 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
+					"\"${SRCROOT}/../TestModuleA/\"",
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
 					"\"${PODS_ROOT}/Headers/Public/BeeHive\"",
-					"\"${PODS_ROOT}/Headers/Public/Bifrost\"",
 					"\"${PODS_ROOT}/Headers/Public/BlocksKit\"",
 					"\"${PODS_ROOT}/Headers/Public/CTMediator\"",
 					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
@@ -530,11 +531,10 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
+					"\"${SRCROOT}/../TestModuleA/\"",
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
 					"\"${PODS_ROOT}/Headers/Public/BeeHive\"",
-					"\"${PODS_ROOT}/Headers/Public/Bifrost\"",
 					"\"${PODS_ROOT}/Headers/Public/BlocksKit\"",
 					"\"${PODS_ROOT}/Headers/Public/CTMediator\"",
 					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",

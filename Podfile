@@ -45,6 +45,7 @@ def commonPods
     pod 'SDWebImage'
     pod 'MQTTClient'
     pod 'RestKit'
+    pod 'YTKNetwork'
     #   UI
     pod 'MJRefresh'
     pod 'UITableView+FDTemplateLayoutCell'
@@ -53,9 +54,11 @@ def commonPods
     #   底层
     pod 'RWPromiseKit'
     pod 'PromiseKit'
+    pod 'PromisesObjC'
     #其它
     pod 'KVOController'
     pod 'JSONModel'
+    pod 'Mantle'
     pod 'BlocksKit'
     pod 'WebViewJavascriptBridge'
     pod 'YYKit'
