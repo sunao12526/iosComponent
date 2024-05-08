@@ -88,12 +88,12 @@ target "MainApp" do
   commonPods
   mediatorPods
 end
-target "Common" do
-  project 'Modules/Common/Common.xcodeproj'
-  commonPods
-end
-target "Mediator" do
-  project 'Modules/Mediator/Mediator.xcodeproj'
-  mediatorPods
-end
+#target "Common" do
+#  project 'Modules/Common/Common.xcodeproj'
+#  commonPods
+#end
+#target "Mediator" do
+#  project 'Modules/Mediator/Mediator.xcodeproj'
+#  mediatorPods
+#end
  

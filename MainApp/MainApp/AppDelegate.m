@@ -9,11 +9,6 @@
 #import "BifrostHeader.h"
 #import "FMDB.h"
 #import "AFNetworking.h"
-//#import "Common/Common.h"
-//#import "Mediator/Mediator.h"
-#import "TestModuleA.h"
-//#import "Mediator.h"
-//#import "Mediator/Home"
 #define Safe(obj) obj ? obj : [NSNull null]
 
 @interface AppDelegate ()
@@ -24,9 +19,6 @@
 @synthesize window = _window;
  
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//        Common *ddd = [Common new];
-//        Mediator *mmm = [Mediator new];
-//        TestModuleA *aaa = [TestModuleA new];
     [AFHTTPSessionManager new];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

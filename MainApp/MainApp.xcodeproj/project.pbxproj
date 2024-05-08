@@ -466,36 +466,7 @@
 				DEVELOPMENT_TEAM = 8392A5FS3K;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"${SRCROOT}/../TestModuleA/\"",
-					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/BeeHive\"",
-					"\"${PODS_ROOT}/Headers/Public/BlocksKit\"",
-					"\"${PODS_ROOT}/Headers/Public/CTMediator\"",
-					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
-					"\"${PODS_ROOT}/Headers/Public/FSCalendar\"",
-					"\"${PODS_ROOT}/Headers/Public/ISO8601DateFormatterValueTransformer\"",
-					"\"${PODS_ROOT}/Headers/Public/JLRoutes\"",
-					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
-					"\"${PODS_ROOT}/Headers/Public/KVOController\"",
-					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
-					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
-					"\"${PODS_ROOT}/Headers/Public/MLSOAppDelegate\"",
-					"\"${PODS_ROOT}/Headers/Public/MQTTClient\"",
-					"\"${PODS_ROOT}/Headers/Public/Objection\"",
-					"\"${PODS_ROOT}/Headers/Public/PromiseKit\"",
-					"\"${PODS_ROOT}/Headers/Public/RKValueTransformers\"",
-					"\"${PODS_ROOT}/Headers/Public/RWPromiseKit\"",
-					"\"${PODS_ROOT}/Headers/Public/RestKit\"",
-					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
-					"\"${PODS_ROOT}/Headers/Public/SOCKit\"",
-					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
-					"\"${PODS_ROOT}/Headers/Public/TransitionKit\"",
-					"\"${PODS_ROOT}/Headers/Public/UITableView+FDTemplateLayoutCell\"",
-					"\"${PODS_ROOT}/Headers/Public/WebViewJavascriptBridge\"",
-					"\"${PODS_ROOT}/Headers/Public/YYKit\"",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MainApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -530,36 +501,7 @@
 				DEVELOPMENT_TEAM = 8392A5FS3K;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"${SRCROOT}/../TestModuleA/\"",
-					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/BeeHive\"",
-					"\"${PODS_ROOT}/Headers/Public/BlocksKit\"",
-					"\"${PODS_ROOT}/Headers/Public/CTMediator\"",
-					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
-					"\"${PODS_ROOT}/Headers/Public/FSCalendar\"",
-					"\"${PODS_ROOT}/Headers/Public/ISO8601DateFormatterValueTransformer\"",
-					"\"${PODS_ROOT}/Headers/Public/JLRoutes\"",
-					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
-					"\"${PODS_ROOT}/Headers/Public/KVOController\"",
-					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
-					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
-					"\"${PODS_ROOT}/Headers/Public/MLSOAppDelegate\"",
-					"\"${PODS_ROOT}/Headers/Public/MQTTClient\"",
-					"\"${PODS_ROOT}/Headers/Public/Objection\"",
-					"\"${PODS_ROOT}/Headers/Public/PromiseKit\"",
-					"\"${PODS_ROOT}/Headers/Public/RKValueTransformers\"",
-					"\"${PODS_ROOT}/Headers/Public/RWPromiseKit\"",
-					"\"${PODS_ROOT}/Headers/Public/RestKit\"",
-					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
-					"\"${PODS_ROOT}/Headers/Public/SOCKit\"",
-					"\"${PODS_ROOT}/Headers/Public/SocketRocket\"",
-					"\"${PODS_ROOT}/Headers/Public/TransitionKit\"",
-					"\"${PODS_ROOT}/Headers/Public/UITableView+FDTemplateLayoutCell\"",
-					"\"${PODS_ROOT}/Headers/Public/WebViewJavascriptBridge\"",
-					"\"${PODS_ROOT}/Headers/Public/YYKit\"",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MainApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
